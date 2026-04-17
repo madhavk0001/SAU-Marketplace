@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Scientific Calculator fx-991EX",
+    "price": "1200",
+    "category": "Electronics",
+    "condition": "Like New",
+    "location": "CSE-006"
+  },
+  {
+    "id": 2,
+    "title": "Digital Logic Design by Morris Mano",
+    "price": "800",
+    "category": "Books",
+    "condition": "Good",
+    "location": "B-204"
+  },
+  {
+    "id": 3,
+    "title": "Hero Cycle",
+    "price": "5000",
+    "category": "Vehicles",
+    "condition": "Used",
+    "location": "Nabin's Canteen"
+  }
+]
