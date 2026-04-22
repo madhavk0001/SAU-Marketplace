@@ -1,0 +1,550 @@
+/* ===== ROOT ===== */
+:root {
+  --bg-dark: #0a0a0a;
+  --bg-soft: #1a1a1a;
+  --text-soft: #94a3b8;
+
+  --pastel-blue: #dbeafe;
+  --pastel-lavender: #e9d5ff;
+  --pastel-line: #c7d2fe;
+
+  --btn-soft: #fde68a;
+}
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background: radial-gradient(circle at 20% 20%, #1a1a1a, #0a0a0a);
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+}
+
+/* ===== BACKGROUND GLOW ===== */
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(219, 234, 254, 0.12), transparent);
+  filter: blur(90px);
+  z-index: 0;
+  animation: float 10s infinite ease-in-out;
+}
+
+body::before {
+  top: -120px;
+  left: -120px;
+}
+
+body::after {
+  bottom: -120px;
+  right: -120px;
+}
+
+@keyframes float {
+  50% { transform: translateY(40px); }
+}
+
+/* ===== BRAND HEADER ===== */
+.brand-header {
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1;
+  animation: fadeDown 1s ease;
+}
+
+/* ===== TITLE ===== */
+.brand-header h1 {
+  font-size: 2.4rem;
+  letter-spacing: 6px;
+  font-weight: 800;
+
+  background: linear-gradient(135deg, var(--pastel-blue), var(--pastel-lavender));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 0 0 20px rgba(219, 234, 254, 0.2);
+}
+
+/* ===== UNDERLINE ===== */
+.brand-header h1::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 2px;
+  margin: 14px auto 0;
+  background: linear-gradient(90deg, transparent, var(--pastel-line), transparent);
+}
+
+/* ===== QUOTE ===== */
+.brand-header p {
+  margin-top: 14px;
+  font-size: 14px;
+  color: var(--text-soft);
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+/* ===== LOGIN CONTAINER ===== */
+.login-container {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  animation: fadeUp 1s ease;
+}
+
+/* ===== LOGIN BOX ===== */
+.login-box {
+  position: relative;
+  background: rgba(20, 20, 20, 0.75);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  border-radius: 22px;
+  width: 320px;
+  text-align: center;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 30px 80px rgba(0,0,0,0.7),
+    0 0 25px rgba(219, 234, 254, 0.1);
+
+  transition: 0.4s;
+}
+
+/* glow border */
+.login-box::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(219,234,254,0.2), transparent);
+  filter: blur(15px);
+  z-index: -1;
+}
+
+/* hover */
+.login-box:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+
+/* ===== TITLE ===== */
+.login-box h2 {
+  margin-bottom: 22px;
+  font-weight: 600;
+  text-shadow: 0 0 12px rgba(219,234,254,0.3);
+}
+
+/* ===== FORMS ===== */
+.form {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form.active {
+  display: flex;
+}
+
+/* ===== INPUTS ===== */
+.login-box input {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #1a1a1a;
+  color: white;
+  transition: 0.3s;
+}
+
+.login-box input:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(219,234,254,0.5);
+}
+
+/* ===== BUTTON ===== */
+.login-box button {
+  margin-top: 5px;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+
+  background: linear-gradient(135deg, #fef3c7, var(--btn-soft));
+  color: #1a1a1a;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 25px rgba(253,230,138,0.6);
+}
+
+/* ===== LINKS ===== */
+.links {
+  margin-top: 10px;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-soft);
+}
+
+.links span {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.links span:hover {
+  color: var(--pastel-blue);
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -30px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -30%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+/* ===== CHOICE PAGE ===== */
+.choice-container {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  display: flex;
+  gap: 60px;
+  z-index: 1;
+}
+
+/* CARD BASE */
+.choice-card {
+  width: 220px;
+  height: 220px;
+  border-radius: 24px;
+
+  background: rgba(20, 20, 20, 0.75);
+  backdrop-filter: blur(18px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  transition: all 0.4s ease;
+
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+}
+
+/* TEXT */
+.choice-card h2 {
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.choice-card p {
+  font-size: 13px;
+  color: #bfbfbf;
+}
+
+/* GRAB STYLE */
+.choice-card.grab:hover {
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 200, 255, 0.4);
+  background: linear-gradient(135deg, #0f2027, #203a43);
+}
+
+/* DROP STYLE */
+.choice-card.drop:hover {
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 0 30px rgba(212,175,55,0.5);
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+}
+/* ===== GRAB HEADER ===== */
+.grab-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 60px;
+  color: #fff;
+}
+
+.grab-header h1 {
+  font-size: 28px;
+  color: #d4af37;
+  letter-spacing: 2px;
+}
+
+/* SEARCH BOX */
+.search-box input {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+
+  background: rgba(255,255,255,0.1);
+  color: white;
+  outline: none;
+
+  width: 220px;
+}
+
+/* ===== GRID ===== */
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 30px;
+
+  padding: 40px 60px;
+}
+
+/* ===== CARD ===== */
+.card {
+  background: rgba(20,20,20,0.8);
+  border-radius: 20px;
+  padding: 20px;
+
+  backdrop-filter: blur(15px);
+  color: white;
+
+  transition: 0.3s ease;
+  animation: fadeIn 0.6s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 0 25px rgba(212,175,55,0.3);
+}
+
+/* CATEGORY BADGE */
+.badge {
+  font-size: 12px;
+  background: #d4af37;
+  color: black;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+/* TITLE */
+.card h3 {
+  margin: 10px 0;
+}
+
+/* PRICE */
+.price {
+  font-size: 18px;
+  color: #d4af37;
+  font-weight: bold;
+}
+
+/* DETAILS */
+.details {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #aaa;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ===== DROP PAGE ===== */
+.drop-container {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 380px;
+  padding: 30px;
+
+  background: rgba(20,20,20,0.85);
+  backdrop-filter: blur(18px);
+
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+}
+
+/* FORM */
+.drop-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* INPUTS */
+.drop-container input,
+.drop-container textarea,
+.drop-container select {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+
+  background: rgba(255,255,255,0.08);
+  color: white;
+  outline: none;
+}
+
+/* TEXTAREA */
+.drop-container textarea {
+  resize: none;
+  height: 80px;
+}
+
+/* FIX DROPDOWN */
+.drop-container select {
+  appearance: none;
+}
+
+/* OPTIONS (important fix) */
+.drop-container select option {
+  background: #1a1a1a;
+  color: white;
+}
+
+/* BUTTON */
+.drop-container button {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+
+  background: #d4af37;
+  color: black;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.drop-container button:hover {
+  background: #f5d76e;
+  transform: scale(1.05);
+}
+/* ============================= */
+/* LANDING PAGE (NEW index.html) */
+/* ============================= */
+body.landing {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.landing-container {
+  z-index: 1;
+  animation: fadeUp 1s ease;
+}
+
+.landing-container h1 {
+  font-size: 2.8rem;
+  letter-spacing: 6px;
+
+  background: linear-gradient(135deg, var(--pastel-blue), var(--pastel-lavender));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  margin-bottom: 15px;
+}
+
+.landing-container p {
+  color: var(--text-soft);
+  margin-bottom: 30px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.landing-container button {
+  padding: 12px 30px;
+  border-radius: 25px;
+  border: none;
+
+  background: linear-gradient(135deg, #fef3c7, var(--btn-soft));
+  color: #1a1a1a;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.landing-container button:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 25px rgba(253,230,138,0.6);
+}
+
+/* ============================= */
+/* LOGIN PAGE FIX (login.html) */
+/* ============================= */
+body.login-page {
+  display: block;
+}
+
+/* keep your original layout but fix centering */
+.brand-header {
+  width: 100%;
+}
+
+/* ============================= */
+/* FIX OVERFLOW ISSUE */
+/* ============================= */
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* ============================= */
+/* CHOICE PAGE SMALL FIX */
+/* ============================= */
+.choice-container {
+  top: 60%;
+}
+
+/* ============================= */
+/* GRAB PAGE WIDTH FIX */
+/* ============================= */
+.grab-header,
+.item-grid {
+  width: 100%;
+}

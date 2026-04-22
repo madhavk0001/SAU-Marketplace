@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketplace</title>
+
+  <link rel="stylesheet" href="../css/style.css?v=30">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="grab-header">
+  <h1>Marketplace</h1>
+
+  <input 
+    type="text" 
+    id="searchInput" 
+    placeholder="Search items..."
+    onkeyup="searchItems()"
+  >
+</header>
+
+<!-- ===== GRID ===== -->
+<main>
+  <div id="itemGrid" class="item-grid"></div>
+</main>
+
+<!-- JS -->
+<script src="../js/grab.js"></script>
+
+</body>
+</html>
