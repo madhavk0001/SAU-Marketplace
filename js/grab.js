@@ -41,7 +41,7 @@ function renderItems(list) {
 
     // FIXED: Mapping names to match our products.json (sellerName and phone)
     card.innerHTML = `
-      <<img src="${item.image}" crossorigin="anonymous" alt="${item.title}" class="card-img">
+      <img src="${item.image}" crossorigin="anonymous" alt="${item.title}" class="card-img">
       
       <div class="card-content" style="padding: 15px;">
         <h3 style="margin: 10px 0;">${item.title}</h3>
@@ -53,7 +53,7 @@ function renderItems(list) {
 
         <hr style="border: 0.1px solid rgba(255,255,255,0.1); margin: 10px 0;">
 
-        <p style="color:#aaa; font-size: 0.9rem;">👤 ${item.sellerName || "Student Seller"}</p>
+        <p style="color:#aaa; font-size: 0.9rem;">👤 ${item.seller || "Student Seller"}</p>
         <p style="color:#fce892; font-size: 0.9rem; font-weight: 500;">📞 ${item.phone || "Contact for Info"}</p>
       </div>
     `;
