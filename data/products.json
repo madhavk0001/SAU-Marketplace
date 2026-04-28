@@ -8,7 +8,15 @@
     "location": "Main Library",
     "image": "https://images.unsplash.com/photo-1594818822617-370a4a2597d1?q=80&w=800&auto=format&fit=crop"
   },
-  
+  {
+    "id": 2,
+    "title": "Macroeconomics - N. Gregory Mankiw",
+    "price": "550",
+    "category": "Library Archive",
+    "condition": "Good",
+    "location": "Akbar Bhawan",
+    "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=800&auto=format&fit=crop"
+  },
   {
     "id": 3,
     "title": "HP Wireless Mouse - Black",
@@ -28,8 +36,16 @@
     "location": "Canteen Plaza",
     "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=800&auto=format&fit=crop"
   },
- 
 
+  {
+    "id": 7,
+    "title": "Python Programming Coursebook",
+    "price": "300",
+    "category": "Library Archive",
+    "condition": "Fair",
+    "location": "Main Library",
+    "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=800&auto=format&fit=crop"
+  },
   {
     "id": 8,
     "title": "Noise Cancelling Headphones",
@@ -48,6 +64,14 @@
     "condition": "Good",
     "location": "Canteen Plaza",
     "image": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": 12,
+    "title": "Data Structures & Algorithms - CLRS",
+    "price": "1500",
+    "category": "Library Archive",
+    "condition": "New",
+    "location": "Main Library",
+    "image": "https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=800&auto=format&fit=crop"
   }
-
 ]
