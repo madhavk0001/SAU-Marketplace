@@ -130,5 +130,117 @@
     "sellerName": "Sneha Patil",
     "phone": "+91 94455 66778",
     "image": "https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=800&auto=format&fit=crop"
+  },
+
+
+  {
+    "id": 13,
+    "title": "Canvas Painting Set (12 Colors)",
+    "price": "450",
+    "category": "Miscellaneous",
+    "condition": "Brand New",
+    "location": "Hostel Block A",
+    "sellerName": "Riya Sharma",
+    "phone": "+91 98888 77777",
+    "image": "https://picsum.photos/id/24/800/600"
+  },
+  {
+    "id": 14,
+    "title": "Ergonomic Office Chair",
+    "price": "3200",
+    "category": "Hostel Kits",
+    "condition": "Like New",
+    "location": "Akbar Bhawan",
+    "sellerName": "Sameer Khan",
+    "phone": "+91 91111 22222",
+    "image": "https://picsum.photos/id/201/800/600"
+  },
+  {
+    "id": 15,
+    "title": "USB-C Hub (7-in-1)",
+    "price": "1400",
+    "category": "Tech & Gear",
+    "condition": "Excellent",
+    "location": "Library Plaza",
+    "sellerName": "Devansh Gupta",
+    "phone": "+91 92222 33333",
+    "image": "https://picsum.photos/id/0/800/600"
+  },
+  {
+    "id": 16,
+    "title": "Hardbound Sketchbook (A4)",
+    "price": "250",
+    "category": "Miscellaneous",
+    "condition": "New",
+    "location": "Main Library",
+    "sellerName": "Anjali Singh",
+    "phone": "+91 93333 44444",
+    "image": "https://picsum.photos/id/20/800/600"
+  },
+  {
+    "id": 17,
+    "title": "Bluetooth Soundbar",
+    "price": "1800",
+    "category": "Tech & Gear",
+    "condition": "Good",
+    "location": "Hostel Block B",
+    "sellerName": "Kartik Aryan",
+    "phone": "+91 94444 55555",
+    "image": "https://picsum.photos/id/211/800/600"
+  },
+  {
+    "id": 18,
+    "title": "Electric Iron (Steam)",
+    "price": "850",
+    "category": "Hostel Kits",
+    "condition": "Used",
+    "location": "Akbar Bhawan",
+    "sellerName": "Pooja Hegde",
+    "phone": "+91 95555 66666",
+    "image": "https://picsum.photos/id/435/800/600"
+  },
+  {
+    "id": 19,
+    "title": "Dumbbells Set (5kg x 2)",
+    "price": "1200",
+    "category": "Miscellaneous",
+    "condition": "Used",
+    "location": "Hostel Gym Area",
+    "sellerName": "Manish Paul",
+    "phone": "+91 96666 77777",
+    "image": "https://picsum.photos/id/465/800/600"
+  },
+  {
+    "id": 20,
+    "title": "Rechargeable Table Fan",
+    "price": "1100",
+    "category": "Hostel Kits",
+    "condition": "Like New",
+    "location": "Hostel Block A",
+    "sellerName": "Siddharth Malhotra",
+    "phone": "+91 97777 88888",
+    "image": "https://picsum.photos/id/618/800/600"
+  },
+  {
+    "id": 21,
+    "title": "Whiteboard (2x3 ft)",
+    "price": "500",
+    "category": "Library Archive",
+    "condition": "Good",
+    "location": "Canteen Plaza",
+    "sellerName": "Varun Dhawan",
+    "phone": "+91 98888 99999",
+    "image": "https://picsum.photos/id/357/800/600"
+  },
+  {
+    "id": 22,
+    "title": "Laptop Backpack (Waterproof)",
+    "price": "950",
+    "category": "Tech & Gear",
+    "condition": "Excellent",
+    "location": "Main Library",
+    "sellerName": "Kriti Sanon",
+    "phone": "+91 99999 00000",
+    "image": "https://picsum.photos/id/209/800/600"
   }
 ]
