@@ -7,25 +7,22 @@
     <link rel="stylesheet" href="css/style1.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<script>
-    const observerOptions = {
-    threshold: 0.1
-};
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
-    });
-}, observerOptions);
+<nav class="navbar navbar-transparent">
+    <div class="nav-container">
+        <div class="nav-left-spacer"></div>
 
-document.querySelectorAll('section, .glass-card, .cat-card').forEach(el => {
-    el.classList.add('fade-in-scroll');
-    observer.observe(el);
-});
-</script>
-<body class="landing-page">
+        <div class="nav-center-wrapper">
+            <ul class="nav-links-horizontal">
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#roadmap" class="nav-item">Roadmap</a></li>
+            </ul>
+        </div>
+
+        
+    </div>
+</nav>
+
 
 <main class="hero-section">
         <div class="hero-bg-container">
@@ -39,7 +36,8 @@ document.querySelectorAll('section, .glass-card, .cat-card').forEach(el => {
             <p class="tagline">The Central Hub for SAU Exchange.</p>
             
             <div class="hero-glass-card">
-                <p>Why buy new when you can get it from the senior down the hall? Explore textbooks, tech, and essentials listed by students, for students.</p>
+                <p><b>Built for SAU. Powered by Students.</b></p>
+<p>Why browse global when your next upgrade is just a hostel block away? <br>Our community marketplace simplifies how you trade academic materials and tech gear. No strangers, no long commutes—just verified deals within our campus walls.</p>
                 <p class="scroll-cue">[ Scroll to explore philosophy ]</p>
             </div>
 
@@ -89,7 +87,7 @@ document.querySelectorAll('section, .glass-card, .cat-card').forEach(el => {
     </div>
 </section>
 
-<section class="roadmap-section">
+<section class="roadmap-section" id = "roadmap">
     <div class="roadmap-container">
         <center><h2 class="section-heading" >Project Roadmap (Future Scope)</h2>
         <div class="roadmap-timeline">
@@ -109,7 +107,7 @@ document.querySelectorAll('section, .glass-card, .cat-card').forEach(el => {
     </div>
 </section>
 
-    <section class="team-section">
+    <section class="team-section" id = "about">
         <h2 class="section-heading">Meet the Team</h2>
         <div class="team-container">
             <div class="dev-card">
