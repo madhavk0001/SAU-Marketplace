@@ -41,7 +41,7 @@ function renderItems(list) {
 
     // FIXED: Mapping names to match our products.json (sellerName and phone)
     card.innerHTML = `
-      <img src="${item.image}" alt="${item.title}" style="width:100%; height:180px; object-fit:cover; border-radius:12px;">
+      <<img src="${item.image}" crossorigin="anonymous" alt="${item.title}" class="card-img">
       
       <div class="card-content" style="padding: 15px;">
         <h3 style="margin: 10px 0;">${item.title}</h3>
