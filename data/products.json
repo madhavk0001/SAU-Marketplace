@@ -1,1 +1,53 @@
+[
+  {
+    "id": 1,
+    "title": "Scientific Calculator fx-991EX",
+    "price": "1200",
+    "category": "Tech & Gear",
+    "condition": "Like New",
+    "location": "Main Library",
+    "image": "https://images.unsplash.com/photo-1594818822617-370a4a2597d1?q=80&w=800&auto=format&fit=crop"
+  },
+  
+  {
+    "id": 3,
+    "title": "HP Wireless Mouse - Black",
+    "price": "400",
+    "category": "Tech & Gear",
+    "condition": "Brand New",
+    "location": "Hostel Block A",
+    "image": "https://images.unsplash.com/photo-1527860299272-af39d94a1906?q=80&w=800&auto=format&fit=crop"
+  },
+  
+  {
+    "id": 5,
+    "title": "Laptop Cooling Pad (Dual Fan)",
+    "price": "900",
+    "category": "Tech & Gear",
+    "condition": "Like New",
+    "location": "Canteen Plaza",
+    "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=800&auto=format&fit=crop"
+  },
+ 
 
+  {
+    "id": 8,
+    "title": "Noise Cancelling Headphones",
+    "price": "2500",
+    "category": "Tech & Gear",
+    "condition": "Excellent",
+    "location": "Library Plaza",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop"
+  },
+
+  {
+    "id": 11,
+    "title": "DSLR Camera Bag",
+    "price": "1100",
+    "category": "Tech & Gear",
+    "condition": "Good",
+    "location": "Canteen Plaza",
+    "image": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?q=80&w=800&auto=format&fit=crop"
+  }
+
+]
