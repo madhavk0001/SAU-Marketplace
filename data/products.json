@@ -6,15 +6,19 @@
     "category": "Tech & Gear",
     "condition": "Like New",
     "location": "Main Library",
-    "image": "https://unsplash.com/photos/a-calculator-sitting-on-top-of-a-piece-of-paper-ySZdYkPGEbs&auto=format&fit=crop"
+    "sellerName": "Aarav Sharma",
+    "phone": "+91 98765 43210",
+    "image": "https://images.unsplash.com/photo-1574607383476-f517f260d30b?q=80&w=800&auto=format&fit=crop"
   },
   {
     "id": 2,
-    "title": "Macroeconomics - N. Gregory Mankiw",
+    "title": "Macroeconomics - Mankiw",
     "price": "550",
     "category": "Library Archive",
     "condition": "Good",
     "location": "Akbar Bhawan",
+    "sellerName": "Isha Gupta",
+    "phone": "+91 91234 56789",
     "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=800&auto=format&fit=crop"
   },
   {
@@ -24,6 +28,8 @@
     "category": "Tech & Gear",
     "condition": "Brand New",
     "location": "Hostel Block A",
+    "sellerName": "Rohan Verma",
+    "phone": "+91 99887 76655",
     "image": "https://images.unsplash.com/photo-1527860299272-af39d94a1906?q=80&w=800&auto=format&fit=crop"
   },
   {
@@ -33,15 +39,19 @@
     "category": "Hostel Kits",
     "condition": "Used",
     "location": "Hostel Block B",
+    "sellerName": "Sanya Malhotra",
+    "phone": "+91 94433 22110",
     "image": "https://images.unsplash.com/photo-1534073828943-f801091bb18c?q=80&w=800&auto=format&fit=crop"
   },
   {
     "id": 5,
-    "title": "Laptop Cooling Pad (Dual Fan)",
+    "title": "Laptop Cooling Pad",
     "price": "900",
     "category": "Tech & Gear",
     "condition": "Like New",
-    "location": "Nabin's Canteen",
+    "location": "Canteen Plaza",
+    "sellerName": "Vikram Singh",
+    "phone": "+91 95566 77889",
     "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=800&auto=format&fit=crop"
   },
   {
@@ -50,16 +60,20 @@
     "price": "600",
     "category": "Hostel Kits",
     "condition": "Used",
-    "location": "",
-    "image": "https://images.unsplash.com/photo-1594191790261-2978a67211ec?q=80&w=800&auto=format&fit=crop"
+    "location": "Akbar Bhawan",
+    "sellerName": "Mehak Kaur",
+    "phone": "+91 92211 33445",
+    "image": "https://images.unsplash.com/photo-1520915569784-210cb329d456?q=80&w=800&auto=format&fit=crop"
   },
   {
     "id": 7,
-    "title": "Python Programming Coursebook",
+    "title": "Python Programming Book",
     "price": "300",
     "category": "Library Archive",
     "condition": "Fair",
     "location": "Main Library",
+    "sellerName": "Arjun Das",
+    "phone": "+91 96677 88990",
     "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=800&auto=format&fit=crop"
   },
   {
@@ -68,7 +82,9 @@
     "price": "2500",
     "category": "Tech & Gear",
     "condition": "Excellent",
-    "location": "Library ",
+    "location": "Library Plaza",
+    "sellerName": "Priya Nair",
+    "phone": "+91 91122 33446",
     "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop"
   },
   {
@@ -78,6 +94,8 @@
     "category": "Miscellaneous",
     "condition": "Used",
     "location": "Hostel Block A",
+    "sellerName": "Karan Jain",
+    "phone": "+91 97788 99001",
     "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=800&auto=format&fit=crop"
   },
   {
@@ -87,7 +105,9 @@
     "category": "Hostel Kits",
     "condition": "Like New",
     "location": "Hostel Block B",
-    "image": "https://images.unsplash.com/photo-1584990333939-729008214385?q=80&w=800&auto=format&fit=crop"
+    "sellerName": "Ananya Roy",
+    "phone": "+91 93344 55667",
+    "image": "https://images.unsplash.com/photo-1556910103-1c02745a3002?q=80&w=800&auto=format&fit=crop"
   },
   {
     "id": 11,
@@ -96,15 +116,19 @@
     "category": "Tech & Gear",
     "condition": "Good",
     "location": "Canteen Plaza",
+    "sellerName": "Rahul Bose",
+    "phone": "+91 90011 22334",
     "image": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?q=80&w=800&auto=format&fit=crop"
   },
   {
     "id": 12,
-    "title": "Data Structures & Algorithms - CLRS",
+    "title": "DSA - CLRS Book",
     "price": "1500",
     "category": "Library Archive",
     "condition": "New",
     "location": "Main Library",
+    "sellerName": "Sneha Patil",
+    "phone": "+91 94455 66778",
     "image": "https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=800&auto=format&fit=crop"
   }
 ]
