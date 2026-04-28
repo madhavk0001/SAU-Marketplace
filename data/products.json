@@ -71,7 +71,15 @@
     "location": "Library Plaza",
     "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop"
   },
-
+  {
+    "id": 9,
+    "title": "Wooden Drawing Board",
+    "price": "450",
+    "category": "Miscellaneous",
+    "condition": "Used",
+    "location": "Hostel Block A",
+    "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=800&auto=format&fit=crop"
+  },
   {
     "id": 10,
     "title": "Mini Induction Cooktop",
