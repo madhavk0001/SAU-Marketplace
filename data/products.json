@@ -6,7 +6,7 @@
     "category": "Tech & Gear",
     "condition": "Like New",
     "location": "Main Library",
-    "image": "https://images.unsplash.com/photo-1594818822617-370a4a2597d1?q=80&w=800&auto=format&fit=crop"
+    "image": "https://unsplash.com/photos/a-calculator-sitting-on-top-of-a-piece-of-paper-ySZdYkPGEbs&auto=format&fit=crop"
   },
   {
     "id": 2,
@@ -41,7 +41,7 @@
     "price": "900",
     "category": "Tech & Gear",
     "condition": "Like New",
-    "location": "Canteen Plaza",
+    "location": "Nabin's Canteen",
     "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=800&auto=format&fit=crop"
   },
   {
@@ -50,7 +50,7 @@
     "price": "600",
     "category": "Hostel Kits",
     "condition": "Used",
-    "location": "Akbar Bhawan",
+    "location": "",
     "image": "https://images.unsplash.com/photo-1594191790261-2978a67211ec?q=80&w=800&auto=format&fit=crop"
   },
   {
@@ -68,7 +68,7 @@
     "price": "2500",
     "category": "Tech & Gear",
     "condition": "Excellent",
-    "location": "Library Plaza",
+    "location": "Library ",
     "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop"
   },
   {
