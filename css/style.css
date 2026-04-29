@@ -1,4 +1,4 @@
-/* ===== ROOT ===== */
+
 :root {
   --bg-dark: #0a0a0a;
   --bg-soft: #1a1a1a;
@@ -11,7 +11,7 @@
   --btn-soft: #fde68a;
 }
 
-/* ===== RESET ===== */
+
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +27,7 @@ body {
   color: white;
 }
 
-/* ===== BACKGROUND GLOW ===== */
+
 body::before,
 body::after {
   content: "";
@@ -54,7 +54,7 @@ body::after {
   50% { transform: translateY(40px); }
 }
 
-/* ===== BRAND HEADER ===== */
+
 .brand-header {
   position: absolute;
   top: 110px;
@@ -65,7 +65,7 @@ body::after {
   animation: fadeDown 1s ease;
 }
 
-/* ===== TITLE ===== */
+
 .brand-header h1 {
   font-size: 2.4rem;
   letter-spacing: 6px;
@@ -78,7 +78,7 @@ body::after {
   text-shadow: 0 0 20px rgba(219, 234, 254, 0.2);
 }
 
-/* ===== UNDERLINE ===== */
+
 .brand-header h1::after {
   content: "";
   display: block;
@@ -88,7 +88,7 @@ body::after {
   background: linear-gradient(90deg, transparent, var(--pastel-line), transparent);
 }
 
-/* ===== QUOTE ===== */
+
 .brand-header p {
   margin-top: 14px;
   font-size: 14px;
@@ -97,7 +97,7 @@ body::after {
   opacity: 0.9;
 }
 
-/* ===== LOGIN CONTAINER ===== */
+
 .login-container {
   position: absolute;
   top: 62%;
@@ -107,7 +107,7 @@ body::after {
   animation: fadeUp 1s ease;
 }
 
-/* ===== LOGIN BOX ===== */
+
 .login-box {
   position: relative;
   background: rgba(20, 20, 20, 0.75);
@@ -126,7 +126,7 @@ body::after {
   transition: 0.4s;
 }
 
-/* glow border */
+
 .login-box::before {
   content: "";
   position: absolute;
@@ -137,19 +137,19 @@ body::after {
   z-index: -1;
 }
 
-/* hover */
+
 .login-box:hover {
   transform: translateY(-5px) scale(1.03);
 }
 
-/* ===== TITLE ===== */
+
 .login-box h2 {
   margin-bottom: 22px;
   font-weight: 600;
   text-shadow: 0 0 12px rgba(219,234,254,0.3);
 }
 
-/* ===== FORMS ===== */
+
 .form {
   display: none;
   flex-direction: column;
@@ -160,7 +160,7 @@ body::after {
   display: flex;
 }
 
-/* ===== INPUTS ===== */
+
 .login-box input {
   padding: 12px;
   border-radius: 10px;
@@ -175,7 +175,7 @@ body::after {
   box-shadow: 0 0 8px rgba(219,234,254,0.5);
 }
 
-/* ===== BUTTON ===== */
+
 .login-box button {
   margin-top: 5px;
   padding: 12px;
@@ -195,7 +195,7 @@ body::after {
   box-shadow: 0 0 25px rgba(253,230,138,0.6);
 }
 
-/* ===== LINKS ===== */
+
 .links {
   margin-top: 10px;
   font-size: 13px;
@@ -213,7 +213,7 @@ body::after {
   color: var(--pastel-blue);
 }
 
-/* ===== ANIMATIONS ===== */
+
 @keyframes fadeDown {
   from {
     opacity: 0;
@@ -235,7 +235,7 @@ body::after {
     transform: translate(-50%, -50%);
   }
 }
-/* ===== CHOICE PAGE ===== */
+
 .choice-container {
   position: absolute;
   top: 65%;
@@ -247,7 +247,7 @@ body::after {
   z-index: 1;
 }
 
-/* CARD BASE */
+
 .choice-card {
   width: 220px;
   height: 220px;
@@ -268,7 +268,7 @@ body::after {
   box-shadow: 0 25px 60px rgba(0,0,0,0.6);
 }
 
-/* TEXT */
+
 .choice-card h2 {
   font-size: 1.6rem;
   letter-spacing: 2px;
@@ -281,20 +281,20 @@ body::after {
   color: #bfbfbf;
 }
 
-/* GRAB STYLE */
+
 .choice-card.grab:hover {
   transform: translateY(-12px) scale(1.05);
   box-shadow: 0 0 30px rgba(0, 200, 255, 0.4);
   background: linear-gradient(135deg, #0f2027, #203a43);
 }
 
-/* DROP STYLE */
+
 .choice-card.drop:hover {
   transform: translateY(-12px) scale(1.05);
   box-shadow: 0 0 30px rgba(212,175,55,0.5);
   background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
 }
-/* ===== GRAB HEADER ===== */
+
 .grab-header {
   display: flex;
   justify-content: space-between;
@@ -310,7 +310,7 @@ body::after {
   letter-spacing: 2px;
 }
 
-/* SEARCH BOX */
+
 .search-box input {
   padding: 10px 15px;
   border-radius: 10px;
@@ -323,7 +323,7 @@ body::after {
   width: 220px;
 }
 
-/* ===== GRID ===== */
+
 .item-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -332,7 +332,7 @@ body::after {
   padding: 40px 60px;
 }
 
-/* ===== CARD ===== */
+
 .card {
   background: rgba(20,20,20,0.8);
   border-radius: 20px;
@@ -350,7 +350,7 @@ body::after {
   box-shadow: 0 0 25px rgba(212,175,55,0.3);
 }
 
-/* CATEGORY BADGE */
+
 .badge {
   font-size: 12px;
   background: #d4af37;
@@ -359,19 +359,19 @@ body::after {
   border-radius: 6px;
 }
 
-/* TITLE */
+
 .card h3 {
   margin: 10px 0;
 }
 
-/* PRICE */
+
 .price {
   font-size: 18px;
   color: #d4af37;
   font-weight: bold;
 }
 
-/* DETAILS */
+
 .details {
   margin-top: 10px;
   font-size: 13px;
@@ -380,7 +380,7 @@ body::after {
   justify-content: space-between;
 }
 
-/* ANIMATION */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -391,7 +391,7 @@ body::after {
     transform: translateY(0);
   }
 }
-/* ===== DROP PAGE ===== */
+
 .drop-container {
   width: 380px;
   margin: 140px auto 40px;
@@ -414,14 +414,12 @@ body::after {
   box-shadow: 0 25px 60px rgba(0,0,0,0.6);
 }
 
-/* FORM */
 .drop-container form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-/* INPUTS */
 .drop-container input,
 .drop-container textarea,
 .drop-container select {
@@ -434,7 +432,6 @@ body::after {
   outline: none;
 }
 
-/* TEXTAREA */
 .drop-container textarea {
   resize: none;
   height: 80px;
