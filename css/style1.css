@@ -533,6 +533,45 @@ body, html {
     opacity: 1;
 }
 
+.navbar-transparent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Keeps links in the middle */
+    align-items: center;
+    padding: 20px 0;
+    z-index: 1000;
+}
+
+.nav-center {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-right {
+    position: absolute; /* Detaches button from flex flow */
+    right: 30px;        /* Puts it in the extreme right */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn-login-accent {
+    background-color: #fce892;
+    color: #000;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(252, 232, 146, 0.3);
+    transition: 0.3s ease;
+}
+
+.btn-login-accent:hover {
+    background-color: #ffd74d;
+    transform: scale(1.05);
+}   
 /* --- Right Side: Separate Entry Buttons --- */
 
 .nav-right-portal {
