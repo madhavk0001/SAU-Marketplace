@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAU Community Marketplace</title>
+
     <link rel="stylesheet" href="css/style1.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
+<body>
+
+<!-- ===== NAVBAR ===== -->
 <nav class="navbar navbar-transparent">
     <div class="nav-container">
+
         <div class="nav-left-spacer"></div>
 
+        <!-- CENTER LINKS -->
         <div class="nav-center-wrapper">
             <ul class="nav-links-horizontal">
                 <li><a href="#about" class="nav-item">About</a></li>
@@ -19,47 +25,61 @@
             </ul>
         </div>
 
-        
+        <!-- RIGHT SIDE LOGIN / SIGNUP -->s
+        <div class="nav-right-portal">
+            <a href="pages/login.html" class="portal-btn btn-signup">Login/Register</a>
+            
+        </div>
+
     </div>
 </nav>
 
-
+<!-- ===== HERO SECTION ===== -->
 <main class="hero-section">
-        <div class="hero-bg-container">
-            <img src="assets/sau.jpg" alt="SAU Campus" class="hero-bg-img">
-            
-            <div class="hero-overlay"></div>
+
+    <div class="hero-bg-container">
+        <img src="assets/sau.jpg" alt="SAU Campus" class="hero-bg-img">
+        <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content fade-in-up">
+        <h1 class="main-title">SAU COMMUNITY MARKETPLACE</h1>
+        <p class="tagline">The Central Hub for SAU Exchange.</p>
+
+        <div class="hero-glass-card">
+            <p><b>Built for SAU. Powered by Students.</b></p>
+            <p>
+                Why browse global when your next upgrade is just a hostel block away? <br>
+                Our community marketplace simplifies how you trade academic materials and tech gear. 
+                No strangers, no long commutes—just verified deals within our campus walls.
+            </p>
+            <p class="scroll-cue">[ Scroll to explore philosophy ]</p>
         </div>
 
-        <div class="hero-content fade-in-up">
-            <h1 class="main-title">SAU COMMUNITY MARKETPLACE</h1>
-            <p class="tagline">The Central Hub for SAU Exchange.</p>
-            
-            <div class="hero-glass-card">
-                <p><b>Built for SAU. Powered by Students.</b></p>
-<p>Why browse global when your next upgrade is just a hostel block away? <br>Our community marketplace simplifies how you trade academic materials and tech gear. No strangers, no long commutes—just verified deals within our campus walls.</p>
-                <p class="scroll-cue">[ Scroll to explore philosophy ]</p>
-            </div>
+        <!-- ❌ Get Started REMOVED -->
 
-            <div class="cta-group">
-                <a href="pages/login.html" class="btn-primary">Get Started</a>
-            </div>
-        </div>
-    </main>
-    <section class="philosophy-section">
+    </div>
+
+</main>
+
+<!-- ===== PHILOSOPHY ===== -->
+<section class="philosophy-section">
     <div class="glass-card fade-in">
         <h2 class="accent-text">Direct Exchange Philosophy</h2>
+
         <div class="philosophy-grid">
             <div class="phil-item">
                 <span class="icon">🔍</span>
                 <h4>Verified Details</h4>
                 <p>View specs and seller contact info directly. No hidden fees.</p>
             </div>
+
             <div class="phil-item">
                 <span class="icon">📍</span>
                 <h4>Campus Meetups</h4>
                 <p>Meet at the Basketball Court or Canteen. No shipping, no wait.</p>
             </div>
+
             <div class="phil-item">
                 <span class="icon">🤝</span>
                 <h4>Peer Trust</h4>
@@ -69,17 +89,21 @@
     </div>
 </section>
 
+<!-- ===== CATEGORIES ===== -->
 <section class="categories-section">
-    <center><h2 class="section-heading">Browse by Need</h2>
+    <center><h2 class="section-heading">Browse by Need</h2></center>
+
     <div class="category-grid">
         <div class="cat-card">
             <h3>Tech & Gear</h3>
             <p>Upgrade your setup with pre-loved peripherals.</p>
         </div>
+
         <div class="cat-card">
             <h3>Library Archive</h3>
             <p>Grab the exact textbooks needed for next semester.</p>
         </div>
+
         <div class="cat-card">
             <h3>Hostel Kits</h3>
             <p>Everything from induction cooktops to study lamps.</p>
@@ -87,18 +111,22 @@
     </div>
 </section>
 
-<section class="roadmap-section" id = "roadmap">
+<!-- ===== ROADMAP ===== -->
+<section class="roadmap-section" id="roadmap">
     <div class="roadmap-container">
-        <center><h2 class="section-heading" >Project Roadmap (Future Scope)</h2>
+        <center><h2 class="section-heading">Project Roadmap (Future Scope)</h2></center>
+
         <div class="roadmap-timeline">
             <div class="roadmap-item">
                 <div class="dot"></div>
                 <p><strong>Phase 2:</strong> In-App Messaging for real-time negotiation.</p>
             </div>
+
             <div class="roadmap-item">
                 <div class="dot"></div>
                 <p><strong>Phase 3:</strong> Item Request Board for specific "Wanted" ads.</p>
             </div>
+
             <div class="roadmap-item">
                 <div class="dot"></div>
                 <p><strong>Phase 4:</strong> Trust Rating System for sellers.</p>
@@ -107,32 +135,37 @@
     </div>
 </section>
 
-    <section class="team-section" id = "about">
-        <h2 class="section-heading">Meet the Team</h2>
-        <div class="team-container">
-            <div class="dev-card">
-                <div class="avatar"></div>
-                <h4>Madhav Khattar</h4>
-                <p>Collabarator</p>
-            </div>
-            <div class="dev-card">
-                <div class="avatar"></div>
-                <h4>Hazur Rehman</h4>
-                <p>Collabarator</p>
-            </div>
-            <div class="dev-card">
-                <div class="avatar"></div>
-                <h4>Md. Farhan</h4>
-                <p>Collabarator</p>
-            </div>
+<!-- ===== TEAM ===== -->
+<section class="team-section" id="about">
+    <h2 class="section-heading">Meet the Team</h2>
+
+    <div class="team-container">
+        <div class="dev-card">
+            <div class="avatar"></div>
+            <h4>Madhav Khattar</h4>
+            <p>Collaborator</p>
         </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2026 SAU Community Marketplace. All Rights Reserved.</p>
-    </footer>
+        <div class="dev-card">
+            <div class="avatar"></div>
+            <h4>Hazur Rahman</h4>
+            <p>Collaborator</p>
+        </div>
 
-    <script src="js/index.js"></script>
+        <div class="dev-card">
+            <div class="avatar"></div>
+            <h4>Md. Farhan Khan</h4>
+            <p>Collaborator</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p>&copy; 2026 SAU Community Marketplace. All Rights Reserved.</p>
+</footer>
+
+<script src="js/index.js"></script>
 
 </body>
 </html>
