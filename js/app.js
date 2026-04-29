@@ -1,6 +1,4 @@
-// ===============================
-// FORM SWITCHING (LOGIN PAGE)
-// ===============================
+
 function setActive(id, title) {
   document.querySelectorAll(".form").forEach(f => f.classList.remove("active"));
   document.getElementById(id)?.classList.add("active");
@@ -14,9 +12,7 @@ function showRegister() { setActive("registerForm", "Create Account"); }
 function showForgot() { setActive("forgotForm", "Forgot Password"); }
 function showReset() { setActive("resetForm", "Reset Password"); }
 
-// ===============================
-// LOGIN (FRONTEND ONLY)
-// ===============================
+
 function login() {
   const user = document.getElementById("loginUser").value.trim();
   const pass = document.getElementById("loginPass").value.trim();
@@ -31,9 +27,6 @@ function login() {
   }
 }
 
-// ===============================
-// REGISTER (FRONTEND ONLY)
-// ===============================
 function register() {
   const name = document.getElementById("regName").value.trim();
   const mobile = document.getElementById("regMobile").value.trim();
@@ -47,9 +40,6 @@ function register() {
   }
 }
 
-// ===============================
-// OTP FLOW (DEMO)
-// ===============================
 function sendOTP() {
   const mobile = document.getElementById("forgotMobile").value.trim();
   if (mobile) {
@@ -70,9 +60,6 @@ function resetPassword() {
   }
 }
 
-// ===============================
-// NAVIGATION (CHOICE PAGE)
-// ===============================
 function goGrab() {
   window.location.href = "grab.html";   // same folder (/pages)
 }
