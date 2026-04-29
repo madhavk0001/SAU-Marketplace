@@ -646,3 +646,53 @@ body {
 .drop-container button {
   margin-top: 10px;
 }
+
+/* ===== GRAB SEARCH FIX ===== */
+.grab-header input {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+
+  background: rgba(255,255,255,0.08);
+  color: white;
+
+  outline: none;
+  width: 220px;
+
+  transition: 0.3s;
+}
+
+.grab-header input::placeholder {
+  color: #aaa;
+}
+
+.grab-header input:focus {
+  box-shadow: 0 0 10px rgba(212,175,55,0.5);
+}
+
+/* ===== SORT DROPDOWN FIX ===== */
+.grab-header select {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+
+  background: rgba(255,255,255,0.08);
+  color: white;
+
+  outline: none;
+  width: 200px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* dropdown options */
+.grab-header select option {
+  background: #1a1a1a;
+  color: white;
+}
+
+/* focus glow */
+.grab-header select:focus {
+  box-shadow: 0 0 10px rgba(212,175,55,0.5);
+}

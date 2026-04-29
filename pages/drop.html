@@ -11,17 +11,15 @@
 
 <body>
 
-<!-- HEADER -->
 <div class="brand-header">
   <h1>Post Your Item</h1>
 </div>
 
-<!-- FORM -->
 <div class="drop-container">
 
   <form onsubmit="event.preventDefault(); addProduct();">
 
-    <!-- CATEGORY -->
+
     <select id="category" required>
       <option value="">Select Category</option>
       <option value="Books">Books</option>
@@ -30,13 +28,13 @@
       <option value="Others">Others</option>
     </select>
 
-    <!-- ITEM NAME -->
+    
     <input type="text" id="itemName" placeholder="Item Name" required>
 
-    <!-- DESCRIPTION -->
+    
     <textarea id="description" placeholder="About the item"></textarea>
 
-    <!-- AGE -->
+   
     <select id="age">
       <option value="">How old is the item?</option>
       <option value="Less than 1 month">Less than 1 month</option>
@@ -46,26 +44,26 @@
       <option value="1+ year">1+ year</option>
     </select>
 
-    <!-- PRICE -->
+    
     <input type="number" id="price" placeholder="Price (₹)" required>
 
-    <!-- CONDITION -->
+    
     <select id="condition">
       <option value="New">New</option>
       <option value="Like New">Like New</option>
       <option value="Used">Used</option>
     </select>
 
-    <!-- IMAGE UPLOAD (OLX STYLE) -->
+   
     <div class="image-upload">
 
-      <!-- BIG IMAGE -->
+      
       <label class="main-img-box">
         +
         <input type="file" accept="image/*" capture="environment" onchange="handleImage(this, 0)">
       </label>
 
-      <!-- SMALL IMAGES -->
+     
       <div class="side-images">
 
         <label class="small-img-box">

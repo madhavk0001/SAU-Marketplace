@@ -1,6 +1,4 @@
-// ===============================
-// IMAGE HANDLING
-// ===============================
+
 let selectedImages = [null, null, null];
 
 function handleImage(input, index) {
@@ -12,7 +10,7 @@ function handleImage(input, index) {
   reader.onload = function (e) {
     selectedImages[index] = e.target.result;
 
-    // show preview
+    
     const box = input.parentElement;
     box.innerHTML = `<img src="${e.target.result}">`;
   };
@@ -21,9 +19,7 @@ function handleImage(input, index) {
 }
 
 
-// ===============================
-// ADD PRODUCT (DROP PAGE)
-// ===============================
+
 function addProduct() {
   const title = document.getElementById("itemName").value.trim();
   const price = document.getElementById("price").value.trim();

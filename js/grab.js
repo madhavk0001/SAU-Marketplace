@@ -1,37 +1,29 @@
 let products = [];
 
-// LOAD FROM JSON
 fetch("../data/products.json")
   .then(res => res.json())
   .then(data => {
     const stored = JSON.parse(localStorage.getItem("products")) || [];
-    
-    // Merge JSON data with any user-added items in LocalStorage
+
     products = [...data, ...stored];
-    console.log("Successfully loaded 12+ items:", products.length); 
 
     renderItems(products);
   })
-  .catch(err => {
-    console.error("JSON load failed:", err);
+  .catch(() => {
     products = JSON.parse(localStorage.getItem("products")) || [];
     renderItems(products);
   });
 
 
-// RENDER FUNCTION
 function renderItems(list) {
   const grid = document.getElementById("itemGrid");
 
-  if (!grid) {
-    console.error("Grid element #itemGrid not found!");
-    return;
-  }
+  if (!grid) return;
 
   grid.innerHTML = "";
 
   if (list.length === 0) {
-    grid.innerHTML = "<p style='color:white; text-align:center; grid-column: 1/-1;'>No items matching your search...</p>";
+    grid.innerHTML = "<p style='color:white;'>No items found</p>";
     return;
   }
 
@@ -39,37 +31,73 @@ function renderItems(list) {
     const card = document.createElement("div");
     card.classList.add("card");
 
-    // FIXED: Mapping names to match our products.json (sellerName and phone)
+    // use first image if multiple exist
+    const imgSrc = item.images ? item.images[0] : item.image;
+
     card.innerHTML = `
-      <img src="${item.image}" crossorigin="anonymous" alt="${item.title}" class="card-img">
-      
-      <div class="card-content" style="padding: 15px;">
-        <h3 style="margin: 10px 0;">${item.title}</h3>
-        <p class="price" style="color: #fce892; font-weight: bold; font-size: 1.2rem;">₹${item.price}</p>
-        
-        <p style="color:#ccc; font-size: 0.85rem; margin: 8px 0;">
-            ${item.condition} | ${item.location} | <span style="color:#fce892;">${item.age}</span>
-        </p>
+      <img src="${imgSrc}" style="width:100%; height:150px; object-fit:cover; border-radius:12px;">
 
-        <hr style="border: 0.1px solid rgba(255,255,255,0.1); margin: 10px 0;">
+      <h3>${item.title}</h3>
+      <p class="price">₹${item.price}</p>
 
-        <p style="color:#aaa; font-size: 0.9rem;">👤 ${item.seller || "Student Seller"}</p>
-        <p style="color:#fce892; font-size: 0.9rem; font-weight: 500;">📞 ${item.phone || "Contact for Info"}</p>
+      <p style="color:#ccc;">${item.about || ""}</p>
+
+      <div>
+        <span>${item.condition}</span> |
+        <span>${item.age || "N/A"}</span>
       </div>
+
+      <p style="color:#aaa;">👤 ${item.seller}</p>
+      <p style="color:#d4af37;">📞 ${item.mobile}</p>
     `;
 
     grid.appendChild(card);
   });
 }
 
-// SEARCH FUNCTION
 function searchItems() {
   const value = document.getElementById("searchInput").value.toLowerCase();
 
   const filtered = products.filter(item =>
-    item.title.toLowerCase().includes(value) || 
-    item.category.toLowerCase().includes(value) // Added category search too!
+    item.title.toLowerCase().includes(value)
   );
 
   renderItems(filtered);
+}
+
+function getAgeValue(age) {
+  if (!age) return 999;
+
+  if (age.includes("Less than")) return 1;
+  if (age.includes("1-3")) return 2;
+  if (age.includes("3-6")) return 3;
+  if (age.includes("6-12")) return 4;
+  if (age.includes("1+")) return 5;
+
+  return 999;
+}
+
+function sortItems() {
+  const value = document.getElementById("sortSelect").value;
+
+  let sorted = [...products];
+
+  if (value === "priceLow") {
+    sorted.sort((a, b) => Number(a.price) - Number(b.price));
+  }
+
+  else if (value === "priceHigh") {
+    sorted.sort((a, b) => Number(b.price) - Number(a.price));
+  }
+
+  else if (value === "ageNew") {
+    sorted.sort((a, b) => getAgeValue(a.age) - getAgeValue(b.age));
+  }
+
+  else if (value === "ageOld") {
+    sorted.sort((a, b) => getAgeValue(b.age) - getAgeValue(a.age));
+  }
+
+  products = sorted;
+  renderItems(products);
 }
