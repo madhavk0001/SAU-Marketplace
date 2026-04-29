@@ -690,3 +690,29 @@ body, html {
     box-shadow: 0 6px 20px rgba(252, 232, 146, 0.4);
     background-color: #ffd74d; /* Slightly deeper yellow */
 }
+/* --- Footer Styling & Animation --- */
+footer {
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+    background: transparent;
+    color: #aaa;
+    font-size: 0.9rem;
+    animation: fadeInFooter 2s ease-in-out;
+}
+
+@keyframes fadeInFooter {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Meet the Team Heading --- */
+#about .section-heading {
+    color: #fce892; /* SAU Yellow */
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(252, 232, 146, 0.2);
+}
