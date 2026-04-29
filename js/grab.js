@@ -1,8 +1,5 @@
 let products = [];
 
-// ===============================
-// LOAD DATA
-// ===============================
 fetch("../data/products.json")
   .then(res => res.json())
   .then(data => {
@@ -18,9 +15,6 @@ fetch("../data/products.json")
   });
 
 
-// ===============================
-// RENDER ITEMS
-// ===============================
 function renderItems(list) {
   const grid = document.getElementById("itemGrid");
 
@@ -61,10 +55,6 @@ function renderItems(list) {
   });
 }
 
-
-// ===============================
-// SEARCH
-// ===============================
 function searchItems() {
   const value = document.getElementById("searchInput").value.toLowerCase();
 
@@ -75,10 +65,6 @@ function searchItems() {
   renderItems(filtered);
 }
 
-
-// ===============================
-// AGE CONVERTER
-// ===============================
 function getAgeValue(age) {
   if (!age) return 999;
 
@@ -91,10 +77,6 @@ function getAgeValue(age) {
   return 999;
 }
 
-
-// ===============================
-// SORT
-// ===============================
 function sortItems() {
   const value = document.getElementById("sortSelect").value;
 
