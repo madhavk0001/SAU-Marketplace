@@ -113,31 +113,36 @@ app.post("/api/register", async (req, res) => {
 });
 
 
-// LOGIN (email OR mobile)
+// ===============================
+// LOGIN API
+// ===============================
 app.post("/api/login", async (req, res) => {
   try {
-    const { loginId, password } = req.body;
+    const { email, password } = req.body;
 
-    if (!loginId || !password) {
-      return res.status(400).json({ message: "All fields required" });
+    console.log("LOGIN BODY:", req.body);
+
+    if (!email || !password) {
+      return res.status(400).json({ error: "Missing fields" });
     }
 
-    const user = await User.findOne({
-      $or: [{ email: loginId }, { mobile: loginId }]
-    });
+    const user = await User.findOne({ email });
 
-    if (!user || user.password !== password) {
-      return res.status(400).json({ message: "Invalid credentials" });
+    if (!user) {
+      return res.status(400).json({ error: "User not found" });
+    }
+
+    if (user.password !== password) {
+      return res.status(400).json({ error: "Wrong password" });
     }
 
     res.json({ message: "Login successful", user });
 
   } catch (err) {
-    console.error("Login error:", err);
-    res.status(500).json({ message: "Login failed" });
+    console.error("LOGIN ERROR:", err);
+    res.status(500).json({ error: "Server error" });
   }
 });
-
 
 // ===============================
 // OTP + RESET PASSWORD
