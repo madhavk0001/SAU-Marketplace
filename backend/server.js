@@ -14,7 +14,9 @@ app.use(cors());
 app.use(express.json());
 
 const PORT = process.env.PORT||5000;
-
+console.log("EMAIL_USER:", process.env.EMAIL_USER);
+console.log("EMAIL_PASS:", process.env.EMAIL_PASS ? "OK" : "MISSING");
+console.log("MONGO_URL:", process.env.MONGO_URL ? "OK" : "MISSING");
 // ===============================
 // EMAIL TRANSPORTER
 // ===============================
