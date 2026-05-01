@@ -21,15 +21,15 @@ const PORT = process.env.PORT||5000;
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "hazur2708@gmail.com",        
-    pass: "ixvv vglh oadh ysin"            
+    user: process.env.EMAIL_USER,        
+    pass: process.env.EMAIL_PASS            
   }
 });
 
 // ===============================
 // CONNECT TO MONGODB
 // ===============================
-mongoose.connect("mongodb+srv://hazur2708_db_user:Hazur%23786@sau-marketplace.rnpihvj.mongodb.net/sau-marketplace?retryWrites=true&w=majority")
+mongoose.connect(process.env.MONGO_URL)
   .then(() => {
     console.log("MongoDB Connected ✅");
 
