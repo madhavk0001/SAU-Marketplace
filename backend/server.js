@@ -31,7 +31,7 @@ const transporter = nodemailer.createTransport({
 // ===============================
 // CONNECT TO MONGODB
 // ===============================
-mongoose.connect(process.env.MONGO_URL)
+mongoose.connect("mongodb+srv://hazur2708_db_user:Hazur786@sau-marketplace.rnpihvj.mongodb.net/?appName=sau-marketplace")
   .then(() => {
     console.log("MongoDB Connected ✅");
 
