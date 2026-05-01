@@ -1,4 +1,10 @@
 // ===============================
+// BASE API
+// ===============================
+const API = "https://sau-marketplace.onrender.com/api";
+
+
+// ===============================
 // IMAGE HANDLING
 // ===============================
 let selectedImages = [null, null, null];
@@ -43,12 +49,12 @@ async function addProduct() {
     category,
     condition,
     age,
-    description: about,
+    about, // keep consistent with grab.js
     images
   };
 
   try {
-    const res = await fetch("http://localhost:5000/api/products", {
+    const res = await fetch(`${API}/products`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -59,12 +65,17 @@ async function addProduct() {
     const data = await res.json();
     console.log("Saved:", data);
 
+    if (!res.ok) {
+      alert(data.message || "Error saving product ❌");
+      return;
+    }
+
     alert("Item added successfully! ✅");
 
     window.location.href = "grab.html";
 
   } catch (err) {
     console.error(err);
-    alert("Error saving product ❌");
+    alert("Server error ❌");
   }
 }
